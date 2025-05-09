@@ -12,7 +12,7 @@ public class Main {
     
 public static void main(String[] args) {
 
-        exercices53();
+        exercices54();
 
     }
 
@@ -1321,17 +1321,72 @@ public static boolean carreparfait(int val)
         return (racine * racine == val);
     }
 
-    public static void exercices53()
+public static void exercices53()
     {
+        boolean estCarreParfait = false;
         System.out.println("Dis moi un nombre: ");
         int val = scan.nextInt();
-        if (carreparfait(val))
-        {
-            System.out.println("Le nombre " +val+ " est un carré parfait");
-        }
-        else
-        {
-            System.out.println("Le nombre " +val+ " n'est pas un carré parfait");
-        }
+            if (carreparfait(val))
+            {
+                estCarreParfait = true;
+                System.out.println("Le nombre " +val+ " est un carré parfait "+estCarreParfait);
+            }
+            else
+            {
+                estCarreParfait = false;
+                System.out.println("Le nombre " +val+ " n'est pas un carré parfait "+estCarreParfait);
+            }
     }
+//Exercices 54
+//7 , 7 , 13 , 9 , 11
+
+public static int calcul(int val1, int val2
+    {
+        return val1 + val2;
+    }
+
+public static void exercices54()
+{
+    int toto = 2;
+    int tata = 5;
+    System.out.println(+calcul(4,3 ));
+    System.out.println(+calcul(toto,tata));
+    System.out.println(+calcul((tata*2), 3));
+    System.out.println(+calcul(4, 5));
+    System.out.println(+calcul(calcul(tata,4),toto));
+}
+
+//Exercices 55
+//6 , 3 , 6 , 20
+// Paramètres formels: val1, val2
+// Parametres effectifs: toto , tata
+// Variables locales : res, i
+
+public static int calcul2(int val1, int val2)
+    {
+        int res = 0;
+        for (int i = 1; i <= val2; i++)
+        {
+            res += val1;
+        }
+        return res;
+    }
+public static void exercices55()
+    {
+        int toto = 3;
+        int tata = 1;
+
+        int res = calcul2(2,3);
+        System.out.println(+calcul2(+res));
+
+        res =calcul2(toto,tata);
+        System.out.println(+calcul2(+res));
+
+        res=calcul2(tata*2,3);
+        System.out.println(+calcul2(+res));
+
+        res=calcul2(4, 5);
+        System.out.println(+res);
+    }
+
 }
